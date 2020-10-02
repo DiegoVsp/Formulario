@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  background: linear-gradient(45deg, red, blue);
+}
+.tela-inicial {
+  display: flex;
+  min-height: 100vh;
+}
+.tela-inicial .direita {
+  width: 500px;
+  /* background-color: #ddd; */
+}
+.tela-inicial .direita img {
+  opacity: 0.8;
+  max-width: 500px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.tela-inicial .esquerda {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form {
+  width: 400px;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 50px 50px 50px;
+}
+form h2 {
+  margin-bottom: 20px;
+  color: #111;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding-left: 10px;
+  border-left: 5px solid #e91e63;
+}
+form label {
+  display: block;
+  margin-bottom: 20px;
+}
+form input {
+  padding: 8px 15px 8px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+form input[type="submit"] {
+  background: #2196f3;
+  border: none;
+  max-width: 130px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+form input[type="submit"]:hover {
+  background: #e91e63;
+}
+.error {
+  background: #e91e63;
+  color: #fff;
+  padding: 2px;
+  font-weight: 700;
+  margin-top: 2px;
+  font-size: 12px;
+  border-radius: 3px;
+}

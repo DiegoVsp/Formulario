@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Formulario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="tela-inicial">
+    <div class="esquerda">
+      <form class="form-validador">
+        <h2>Crie sua conta</h2>
+        <label>Seu nome:<br />
+          <input type="text" name="nome" data-rules="required|max=11">
+        </label>
+
+        <label>Seu email:<br />
+          <input type="text" name="email" data-rules="required|email">
+        </label>
+
+        <label>Sua senha:<br />
+          <input type="password" name="senha" data-rules="required|min=6">
+        </label>
+
+        <div>
+          <input type="submit" value="Cadastrar">
+        </div>
+      </form>
+    </div>
+    <div class="direita">
+      <img src="./img/escritorio.jpg" alt="escritorio">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
